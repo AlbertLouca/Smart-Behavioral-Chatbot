@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45d80a3c-a5ed-443f-b3d7-2342d02a291a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/concept/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/concept/bot.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603827924196</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="adding voice recognition">
+      <created>1603828443774</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603828443774</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -81,29 +89,33 @@
     <option name="LAST_COMMIT_MESSAGE" value="adding voice recognition" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1676" y="0" key="CommitChangelistDialog2" timestamp="1603827918630">
+    <state x="1676" y="0" key="CommitChangelistDialog2" timestamp="1603828441607">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state x="1676" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1603827918630" />
-    <state width="1345" height="163" key="GridCell.Tab.0.bottom" timestamp="1603826729458">
+    <state x="1676" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1603828441607" />
+    <state width="1345" height="329" key="GridCell.Tab.0.bottom" timestamp="1603834507998">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1603826729458" />
-    <state width="1345" height="163" key="GridCell.Tab.0.center" timestamp="1603826729457">
+    <state width="1345" height="329" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1603834507998" />
+    <state width="1345" height="329" key="GridCell.Tab.0.center" timestamp="1603834507997">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="163" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1603826729457" />
-    <state width="1345" height="163" key="GridCell.Tab.0.left" timestamp="1603826729457">
+    <state width="1345" height="329" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1603834507997" />
+    <state width="1345" height="329" key="GridCell.Tab.0.left" timestamp="1603834507997">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="163" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1603826729457" />
-    <state width="1345" height="163" key="GridCell.Tab.0.right" timestamp="1603826729458">
+    <state width="1345" height="329" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1603834507997" />
+    <state width="1345" height="329" key="GridCell.Tab.0.right" timestamp="1603834507998">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="163" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1603826729458" />
+    <state width="1345" height="329" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1603834507998" />
     <state x="1520" y="2" key="SettingsEditor" timestamp="1603548354337">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="1520" y="2" key="SettingsEditor/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1603548354337" />
+    <state x="1659" y="76" key="Vcs.Push.Dialog.v2" timestamp="1603834595307">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="1659" y="76" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1603834595307" />
   </component>
 </project>
