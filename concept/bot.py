@@ -45,35 +45,28 @@ chat = Chat(pairs)
 r = sr.Recognizer()
 
 
-# Function to convert text to
-# speech
+# Function to convert text to speech
+
 def SpeakText(command):
-    # Initialize the engine
     engine = pyttsx3.init()
     engine.say(command)
     engine.runAndWait()
 
-
-# Loop infinitely for user to
-# speak
-
 while (True):
 
-    # Exception handling to handle
-    # exceptions at the runtime
+
+
     try:
 
         # use the microphone as source for input.
-        with sr.Microphone() as source2:
+        with sr.Microphone() as user_voice:
 
-            # wait for a second to let the recognizer
-            # adjust the energy threshold based on
-            # the surrounding noise level
-            r.adjust_for_ambient_noise(source2, duration=0.2)
-            print('I am listening..')
 
-            # listens for the user's input
-            audio2 = r.listen(source2)
+            r.adjust_for_ambient_noise(user_voice, duration=0.2)
+            print('SBC: I am listening..')
+
+
+            audio2 = r.listen(user_voice)
 
             # Using ggogle to recognize audio
             MyText = r.recognize_google(audio2)
