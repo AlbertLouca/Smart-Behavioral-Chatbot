@@ -1,5 +1,4 @@
 ## Smart-Behavioral-Chatbot
-<img src="https://cdn.technologyadvice.com/wp-content/uploads/2018/02/friendly-chatbot-700x408.jpg " alt="" width="100" height="170">
 
 ![Chatbot](https://cdn.technologyadvice.com/wp-content/uploads/2018/02/friendly-chatbot-700x408.jpg)
 
