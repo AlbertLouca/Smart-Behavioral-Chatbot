@@ -1,0 +1,367 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    
+	<head>
+       
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}"> 
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css') }}">
+        
+		<!-- owl.carousel css -->
+		<!--<link rel="stylesheet" href="css/owl.carousel.css">  -->
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.carousel.css' )}}">
+	<!--	<link rel="stylesheet" href="css/owl.transitions.css">  -->
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.transitions.css') }}">
+       <!-- Animate css -->
+       <!-- <link rel="stylesheet" href="css/animate.css">  -->
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/animate.css') }}">
+        <!-- meanmenu css --> 
+     <!--   <link rel="stylesheet" href="css/meanmenu.min.css">  -->
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/meanmenu.min.css') }}">
+		<!-- font-awesome css -->
+	<!--	<link rel="stylesheet" href="css/font-awesome.min.css">  -->
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/font-awesome.min.css') }}">
+	<!--	<link rel="stylesheet" href="css/icon.css">  -->
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/icon.css') }}">
+	<!--	<link rel="stylesheet" href="css/flaticon.css">  -->
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/flaticon.css' )}}">
+		<!-- magnific css -->
+    <!--    <link rel="stylesheet" href="css/magnific.min.css">  -->
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/magnific.min.css') }}">
+		<!-- style css -->
+	<!--	<link rel="stylesheet" href="style.css">  -->
+  
+		<!-- responsive css -->
+	<!--	<link rel="stylesheet" href="css/responsive.css">  -->
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/responsive.css') }}">
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Home-1 | Roboart</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- favicon 	
+		<link rel="shortcut icon" type="image/x-icon" href="img/logo/favicon.ico">-->	
+        
+        <link rel=" icon" type="image/x-icon" href="{{ url_for('static',filename='img/logo/favicon.ico') }}">
+
+		<!-- all css here -->
+
+		<!-- bootstrap v3.3.6 css -->
+		<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+     
+
+		<!-- modernizr css 
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>-->
+        <script href="{{ url_for('static',filename='js/vendor/modernizr-2.8.3.min.js') }}"></script>
+	</head>
+		<body>
+
+		<!--[if lt IE 8]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+        <div id="preloader"></div>
+        <header class="header-one">
+            <!-- header-area start -->
+            <div id="sticker" class="header-area hidden-xs">
+                <div class="container">
+                    <div class="row">
+                        <!-- logo start -->
+                        <div class="col-md-3 col-sm-3">
+                            <div class="logo">
+                                <!-- Brand -->
+                                <a class="navbar-brand page-scroll black-logo" href="index.html">
+                                   <div style ="size:10px ">Smart Behavioral Chatbot</div>
+                                </a>
+                                <a class="navbar-brand page-scroll white-logo" href="index.html">
+                                 <!--   <img src="img/logo/logo.png" alt=""> -->
+                                    <img  src="{{ url_for('static',filename='img/logo/logo.png') }}">
+                                </a>
+                            </div>
+                            <!-- logo end -->
+                        </div>
+                        <div class="col-md-9 col-sm-9">
+                            <div class="header-right-link">
+                                <!-- search option end -->
+								<a class="s-menu" href="login.html">Sign in</a>
+                            </div>
+                            <!-- mainmenu start -->
+                            <nav class="navbar navbar-default">
+                                <div class="collapse navbar-collapse" id="navbar-example">
+                                    <div class="main-menu">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a class="pagess" href="index.html">Home</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="index.html">Home 01</a></li>
+                                                    <li><a href="index-2.html">Home 02</a></li>
+                                                    <li><a href="index-3.html">Home 03 <span class="new">New</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="chatbot">Chatbot</a></li>
+                                            <li><a class="pagess" href="#">Pages</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="team.html">team</a></li>
+                                                    <li><a href="faq.html">FAQ</a></li>
+                                                    <li><a href="review.html">Review</a></li>
+                                                    <li><a href="pricing.html">Pricing</a></li>
+                                                </ul>
+                                            </li>
+                                          
+                                            <li><a href="contact.html">contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                            <!-- mainmenu end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header-area end -->
+            <!-- mobile-menu-area start -->
+            <div class="mobile-menu-area hidden-lg hidden-md hidden-sm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mobile-menu">
+                                <div class="logo">
+                                    <a href="index.html"><img src= "{{ url_for('static',filename='img/logo/logo2.png') }}" alt="" /></a>
+                                </div>
+                                <nav id="dropdown">
+                                    <ul>
+                                        <li><a class="pagess" href="index.html">Home</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="index.html">Home 01</a></li>
+                                                <li><a href="index-2.html">Home 02</a></li>
+                                                <li><a href="index-3.html">Home 03 <span class="new">New</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a class="pagess" href="#">Pages</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="team.html">team</a></li>
+                                                <li><a href="faq.html">FAQ</a></li>
+                                                <li><a href="review.html">Review</a></li>
+                                                <li><a href="pricing.html">Pricing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="pagess" href="#">Blog</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="blog.html">Blog grid</a></li>
+                                                <li><a href="blog-sidebar.html">Blog Sidebar</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">contacts</a></li>
+                                    </ul>
+                                </nav>
+                            </div>					
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile-menu-area end -->		
+        </header>
+        <!-- header end -->
+		<div class="content-section">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Log In</legend>
+                <div class="form-group">
+                    {{ form.email.label(class="form-control-label") }}
+                    {% if form.email.errors %}
+                        {{ form.email(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.email.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.email(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.password.label(class="form-control-label") }}
+                    {% if form.password.errors %}
+                        {{ form.password(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.password.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.password(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div class="form-check">
+                    {{ form.remember(class="form-check-input") }}
+                    {{ form.remember.label(class="form-check-label") }}
+                </div>
+            </fieldset>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+            <small class="text-muted ml-2">
+                <a href="#">Forgot Password?</a>
+            </small>
+        </form>
+    </div>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            Need An Account? <a class="ml-2" href="/register">Sign Up Now</a>
+        </small>
+    </div>
+	 <!-- Start Footer bottom Area -->
+        <footer class="footer1">
+            <div class="footer-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-5 col-xs-12">
+                            <div class="footer-content logo-footer">
+                                <div class="footer-head">
+                                    <div class="footer-logo">
+                                    	<a class="footer-black-logo" href="#"><img src="img/logo/logo2.png" alt=""></a>
+                                    	<a class="footer-white-logo" href="#"><img src="img/logo/logo.png" alt=""></a>
+                                    </div>
+                                    <p>
+                                        Are you looking for professional advice for your new business.Are you looking for professional advice for your new business.Are you looking for professional advice for your new business.
+                                    </p>
+                                    <div class="subs-feilds">
+                                        <div class="suscribe-input">
+                                            <input type="email" class="email form-control width-80" id="sus_email" placeholder="Type Email">
+                                            <button type="submit" id="sus_submit" class="add-btn">Subscribe</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end single footer -->
+                        <div class="col-md-4 col-sm-3 col-xs-12">
+                            <div class="footer-content">
+                                <div class="footer-head">
+                                    <h4>Services Link</h4>
+                                    <ul class="footer-list">
+                                        <li><a href="#">Business</a></li>
+                                        <li><a href="#">Agency </a></li>
+                                        <li><a href="#">Social media</a></li>
+                                        <li><a href="#">Branding</a></li>
+                                        <li><a href="#">Design </a></li>
+                                    </ul>
+                                    <ul class="footer-list hidden-sm">
+										<li><a href="#">Search engine</a></li>
+                                        <li><a href="#">Online support</a></li>
+                                        <li><a href="#">Development</a></li>
+                                        <li><a href="#">Pay per click</a></li>
+                                        <li><a href="#">Event activation</a></li>
+									</ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end single footer -->
+                        <div class="col-md-3 col-sm-4 col-xs-12">
+                            <div class="footer-content last-content">
+                                <div class="footer-head">
+                                    <h4>Information</h4> 
+                                    <div class="footer-contacts">
+										<p><span>Tel :</span> +0890-564-5644</p>
+										<p><span>Email :</span> info@roboart3.com</p>
+										<p><span>Location :</span> House- 65/4, London</p>
+									</div> 
+                                    <div class="footer-icons">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-pinterest"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-instagram"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-area-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="copyright">
+                                <p>
+                                    Copyright © 2019
+                                    <a href="#">Roboart</a> All Rights Reserved
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+		
+		<!-- all js here -->
+
+		<!-- jquery latest version 
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>-->
+        <script src="{{ url_for('static',filename='js/vendor/jquery-1.12.4.min.js') }}"></script>
+		<!-- bootstrap js 
+		<script src="js/bootstrap.min.js"></script>-->
+        <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+		<!-- owl.carousel js
+		<script src="js/owl.carousel.min.js"></script> -->
+        <script src="{{ url_for('static',filename='js/owl.carousel.min.js') }}"></script>
+		<!-- Counter js
+		<script src="js/jquery.counterup.min.js"></script> -->
+        <script src="{{ url_for('static',filename='js/jquery.counterup.min.js') }}"></script>
+		<!-- waypoint js 
+		<script src="js/waypoints.js"></script>-->
+        <script src="{{ url_for('static',filename='js/waypoints.js') }}"></script>
+		 <!-- stellar js 
+        <script src="js/jquery.stellar.min.js"></script>-->
+
+        <script src="{{ url_for('static',filename='js/jquery.stellar.min.js') }}"></script>
+		<!-- magnific js 
+        <script src="js/magnific.min.js"></script>-->
+        <script src="{{ url_for('static',filename='js/magnific.min.js') }}"></script>
+        <!-- wow js 
+        <script src="js/wow.min.js"></script>-->
+        <script src="{{ url_for('static',filename='js/wow.min.js') }}"></script>
+        <!-- meanmenu js 
+        <script src="js/jquery.meanmenu.js"></script>-->
+        <script src="{{ url_for('static',filename='js/jquery.meanmenu.js') }}"></script>
+		<!-- Form validator js 
+		<script src="js/form-validator.min.js"></script>-->
+        <script src="{{ url_for('static',filename='js/form-validator.min.js') }}"></script>
+		<!-- plugins js 
+		<script src="js/plugins.js"></script> -->
+        <script src="{{ url_for('static',filename='js/plugins.js') }}"></script>
+		<!-- main js 
+		<script src="js/main.js"></script>-->
+        <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1Mq
+	</body>
+</html>

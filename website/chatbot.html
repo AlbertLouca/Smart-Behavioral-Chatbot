@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- CHAT BAR BLOCK -->
+   
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp" style="color: #855CAD;"></h5>
+                            <p  class="botText"><span>Welcome to Our SBC...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="textInput"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-mic"
+                                    onclick="heartButton()"></i>
+                                <button id="submit_answer" style="color: #333;" class="fa fa-fw fa-send"
+                                    ></button>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="static/scripts/responses.js"></script>
+<script src="static/scripts/chat.js"></script>
+<script>
+jQuery(document).ready(function(){
+
+$("#submit_answer").click(function(e)
+{
+    let userText = $("#textInput").val();
+    if (userText == "") {
+        userText = "Please enter your question";
+    }
+
+  
+    
+e.preventDefault();
+$.ajax({
+    type:'GET',
+                url:'/chatbot/answer',
+                data:{
+                        question:$("#textInput").val()
+                },
+                success:function(result){
+                $("#chatbox").append('<p class="userText"><span>' + userText + '</span></p>');
+                $("#chatbox").append('<p class ="botText"><span>' + result.response+ '</span></p>');
+                $("#textInput").val("")
+                },
+                error:function(result){
+                        alert('sorry an error occured'+$("#textInput").val());
+                }
+
+
+
+
+
+})
+}
+
+
+);
+
+
+});
+
+</script>
+</html>

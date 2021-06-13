@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static',filename='img/logo/favicon.ico')}}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/chat.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/home.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link rel="stylesheet" href="{{ url_for('static',filename='css/magnific.min.css')}}">
+	 <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.carousel.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/owl.transitions.css')}}">
+	
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
+	
+</head>
+
+<body>
+           
+    <!-- CHAT BAR BLOCK -->
+                   <div class="header">
+                            <div class="chat-top-block ">
+							<div class="d-flex bd-highlight" >
+								<div class="img_cont">
+									<img src="{{ url_for('static',filename='img/team/t2.jpg')}}" class="rounded-circle user_img">
+									<span class="online"></span>
+								</div>
+								<div class="user_name">
+									<span>Youssef</span>
+								</div>
+								
+								
+							</div>
+							<span id="three_dots_btn"><i class="fas fa-ellipsis-v fa-2x"></i></span>
+							<div class="three_dots">
+								<ul>
+									<li><i class="fas fa-user-circle"></i> View profile</li>
+									<li><i class="fas fa-history"></i>View chat history</li>
+									<li><i class="fas fa-notes-medical"></i>Download Medical Report</li>
+									<a href="/pricing" style="color: #fb3f00; text-decoration: none;" ><li><i class="fas fa-ban"></i>End chat</li></a>
+								</ul>
+							</div>
+						</div>
+						</div>
+						
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 class="time" id="chat-timestamp" ></h5>
+                            <p id="botStarterMessage" class="botText"><span>Welcome to our Chatbot... You can ask your questions right away 😁</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+							
+                                <input id="textInput" class="input-box" type="text" name="textInput"
+                                    placeholder="Tap 'Enter' to send a message"style="color:#cccccc	;">
+                                <p></p>
+								
+                            </div>
+							 
+                              
+                            <div class="chat-bar-icons">
+                               
+                                <i id="chat-icon" style="color: #cccccc" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="{{ url_for('static',filename='js/responses.js')}}"></script>
+<script src="{{ url_for('static',filename='js/chat.js')}}"></script>
+
+<script>
+     let time = getTime();
+
+$("#chat-timestamp").append(time);
+</script>
+
+
+</html>
