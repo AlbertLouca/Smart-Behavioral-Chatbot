@@ -8,18 +8,8 @@ Our system aims to better and feather enhance the chatbot technology through mak
 
 ## Our Model consist of two main phases:
 
-### Text Classification using BERT:
-Our augmented data-set consists of 4115  questions all of them are categorized into 14 categories which are ( 'Speculation','Transmission', 'Nomenclature', 'Reporting','Societal      Response', 'Societal Effects', 'Origin', 'Prevention',
-    'Treatment', 'Testing', 'Comparison', 'Economic Effects',
-    'Symptoms', 'Having COVID', 'Individual Response' ). 75% of them are used in training while 25\% are used in testing.  we start the pre-processing part where we collect all the questions associated with a specific category which corresponds to the column in the data-set and then we train our model on all the questions.
-    The implementation of the BERT model here is after we train our model and start using it by giving it the questions as an input and the model will respond with the right category in which we take the context file associated with it and feed it to the next part.the objective from this step is to classify the type of inquiry the user want so it would be easier and faster for the QnA model to answer the question with good accuracy as well as allowing as to have more organized and suitable data set.While training we reached accuracy about 98\% and testing about 96%
-    it's clear that our Bert classifier has a bit of over fitting.
+### Text Classification using BERT
+
     
 ###  Answering questions using BERT:
 
-
-The second model(QnA with BERT) which is pre-trained toreceive 512 token in the form of text as the maximum number.BERT  is  developed  to  understand  the  context  of  a  paragraphand to take the question as the input and and get the answerfrom  the  provided  context.  The  model  predicts  the  start  andend tokens from the paragraph which is given to it in the formof the context that will most likely answer the given question
-
-
-
-Bidirectional  Encoder  Representations  from  Transformers(BERT) is considered a Transformer based on machine learn-ing techniques for natural language processing purposes (NLP) already  pre-trained  and  developed  by  Google  researchers.BERT was developed to help with Q&A tasks using a questionand answer dataset like SQuAD v2.0. BERT is different thansomething like LSTM in some points where it takes the wholesentence as the input and not the words sequentially so it takesboth  of  the  question  and  the  context  in  a  specific  tasks  likequestion answering ones where it needs to be fine tuned afterbeing pre-trained by google.
