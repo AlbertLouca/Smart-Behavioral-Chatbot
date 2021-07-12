@@ -11,5 +11,5 @@ Our system aims to better and feather enhance the chatbot technology through mak
 ### Text Classification using BERT
 
     
-###  Answering questions using BERT:
+###  Answering questions using BERT
 
